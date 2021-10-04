@@ -11,7 +11,7 @@ from helper.list import list
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
           insert(int(message.chat.id))
-          await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to you selected language__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],                 [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical"),InlineKeyboardButton("How To Use",url = "https://youtu.be/dUYvenXiYKE") ]           ]        ) )
+          await message.reply_text(text =f"Bismillah, Selamat datang ikhwah fillah **{message.from_user.first_name }** \n\n __Saya adalah Google Translator Bot \n Saya dapat menerjemahkan bahasa apa pun ke bahasa yang Anda pilih__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("Channel" ,url="https://t.me/joinchat/YzNzqLPRCXI5MDEx") ],                 [InlineKeyboardButton("contact", url="t.me/dev_annajiyahmediacenter"),InlineKeyboardButton("Cara menggunakan",url = "https://t.me/joinchat/Ogl2lnH7V805NmU5") ]           ]        ) )
             
             
 @Client.on_message(filters.private & filters.text  )
@@ -65,9 +65,9 @@ async def echo(client, message):
 							fromt = i
 						if list[i] == translation.dest:
 							to = i
-					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @lntechnical")
+					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n #Annajiyah_Media_Center")
 			except Exception as e:
-					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @lntechnical")
+					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n #Annajiyah_Media_Center")
 	else:
 		await  message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup =keybord1)
 
