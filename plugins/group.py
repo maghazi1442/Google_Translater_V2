@@ -17,14 +17,14 @@ async def left(client,message):
 						fromt = i
 					if list[i] == translation.dest:
 						to = i 
-				await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```")
+				await message.reply_text(f"Diterjemahkan dari **{fromt.capitalize()}** Ke **{to.capitalize()}**\n\n```{translation.text}```")
 			except:
-			   	await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```")
+			   	await message.reply_text(f"Diterjemahkan dari **{translation.src}** Ke **{translation.dest}**\n\n```{translation.text}```")
       			
 				
 			
 		except :
 			print("error")
 	else:
-			 ms = await message.reply_text("You can Use This Command by using reply to message")
+			 ms = await message.reply_text("Anda dapat menggunakan perintah ini dengan menggunakan balas ke pesan")
 			 await ms.delete()
